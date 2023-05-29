@@ -6,7 +6,7 @@ server.use(express.json())
 //localhost:3000/lista/1 //Lista 
 //localhost:3000/lista //Listar todos 
 const listasArray=[' Filmes ',' Séries ']
-//Rota para listar um único prato
+//Rota para listar 
 server.get('/lista/:indiceInput', (req, res) => {
 const {indiceInput} = req.params
 return res.json({ lista: `Sua lista de${listasArray[indiceInput]}` })
